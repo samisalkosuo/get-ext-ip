@@ -1,6 +1,6 @@
-timestamp=$(date)
-echo "Started $timestamp"
-extip=$(curl -k https://icanhazip.com/ 2> /dev/null)
+#!/bin/sh
 
-echo "External IP: $extip"
+#print external IP address and wait...
+curl -k https://icanhazip.com/
+
 sleep 1000000d
